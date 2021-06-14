@@ -1,6 +1,6 @@
 const { Collection } = require("discord.js");
 const { readdirSync } = require("fs");
-const { TOKEN } = require("./config");
+const { TOKEN } = require("./config.json");
 const Nana = require("./lib/NanaClient");
 // require("./server");
 
