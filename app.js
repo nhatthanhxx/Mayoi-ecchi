@@ -1,6 +1,6 @@
 const { Collection } = require("discord.js");
 const { readdirSync } = require("fs");
-const { TOKEN } = require("./config.json");
+const { TOKENS } = require("./config.json");
 const Nana = require("./lib/NanaClient");
 // require("./server");
 
@@ -33,6 +33,6 @@ for (const command of readdirSync("./commands").filter(x =>
     }
 }
 
-client.login(TOKEN);
+client.login(TOKENS);
 
 module.exports = Nana;
