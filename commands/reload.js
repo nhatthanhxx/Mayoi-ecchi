@@ -1,5 +1,5 @@
 exports.run = async (client, msg, args) => {
-  msg.delete({ timeout: 5000 });
+  // msg.delete({ timeout: 5000 });
   if (!args || args.length < 1)
     return msg.reply("Must provide a command name to reload.");
   const commandName = args[0];
