@@ -11,7 +11,7 @@ echo ""
 echo "Clone done"
 
 mv "$dir" "$olddir"
-mv "$tempdir" "$dir"
+mv "$tempdir/$dir" "$dir"
 echo ""
 echo "Replace done"
 
