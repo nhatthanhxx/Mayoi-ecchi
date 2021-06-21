@@ -1,7 +1,7 @@
 #!/bin/sh
 root=$(pwd)
 dir=Mayoi-ecchi
-tempdir=Mayoi_Temp
+tempdir=Mayoi_temp
 olddir=Mayoi_old
 
 cd "$root"
@@ -11,7 +11,7 @@ echo ""
 echo "Clone done"
 
 mv "$dir" "$olddir"
-mv "$tempdir/$dir" "$dir"
+mv "$tempdir" "$dir"
 echo ""
 echo "Replace done"
 
