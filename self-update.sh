@@ -1,7 +1,8 @@
 #!/bin/sh
 root=$(pwd)
+dir=Mayoi-ecchi
 tempdir=Mayoi_Temp
-
+olddir=Mayoi_old
 
 cd "$root"
 rm -r -f "$tempdir"
@@ -13,13 +14,13 @@ echo "Clone done"
 
 cd "$root"
 
-mv -f Mayoi-ecchi Mayoi_old
-mv "$tempdir"/Mayoi-ecchi Mayoi-ecchi
+mv -f "$dir" "$olddir"
+mv "$tempdir/$dir" "$dir"
 echo ""
 echo "Replace done"
 
-cp -f /Mayoi_old/config.json /Mayoi-ecchi/config.json
-cp -f /Mayoi_old/data Mayoi-ecchi/data
+cp -f "$root/$olddir/config.json" "$root/$dir/config.json"
+cp -f "$root/$olddir/data" "$root/$dir/data"
 echo ""
 echo "Copy data done"
 
