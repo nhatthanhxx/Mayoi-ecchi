@@ -16,7 +16,7 @@ Users      :: ${users.toLocaleString()}
 Servers    :: ${servers.toLocaleString()}
 Channels   :: ${channels.toLocaleString()}
 Bot Vers.  :: ${botVersion}
-D.js-light :: v${version}
+Discord.js :: v${version}
 Node       :: ${process.version}\`\`\``);
 };
 
