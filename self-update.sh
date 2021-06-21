@@ -10,10 +10,8 @@ git clone https://github.com/nhatthanhxx/Mayoi-ecchi.git "$tempdir"
 echo ""
 echo "Clone done"
 
-cd "$root"
-mv -f "$dir" "$olddir"
-cd "$root"
-mv -f "$tempdir" "$dir"
+mv "$dir" "$olddir"
+mv "$tempdir" "$dir"
 echo ""
 echo "Replace done"
 
