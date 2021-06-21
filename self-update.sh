@@ -21,6 +21,7 @@ echo ""
 echo "Copy data done"
 
 rm -r -f "$tempdir"
+rm -r -f "$olddir"
 echo ""
 echo "Clean done"
 
