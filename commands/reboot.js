@@ -1,6 +1,6 @@
 exports.run = async (client, msg, args) => {
-    // if(msg.author.id == OWNERS)
-    // client.destroy();
+    if(msg.author.id == client.config.OWNERS)
+    client.destroy();
 }
 
 exports.conf = {
