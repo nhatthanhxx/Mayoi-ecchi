@@ -2,6 +2,17 @@ const pkg = require("../package.json");
 const axios = require("axios");
 
 module.exports = async (client) => {
+  
+  let check = null;
+  client.database.db.all("SELECT name FROM sqlite_master WHERE type='table' AND name='favorit';", function (err, rows) {
+    if (err) console.log(err);
+    else check = rows.length;    
+  });
+  if (!check) {
+    client.database.db.run("CREATE TABLE IF NOT EXISTS favorit (userID TEXT, bookID TEXT)");
+    console.log("initialize datatable.");
+  }
+
   const version = pkg.version;
 
   const users = client.users.cache.size;
