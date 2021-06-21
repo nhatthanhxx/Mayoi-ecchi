@@ -6,6 +6,10 @@ olddir=Mayoi_old
 
 cd "$root"
 rm -r -f "$tempdir"
+rm -r -f "$olddir"
+echo ""
+echo "Pre-clean done"
+
 git clone https://github.com/nhatthanhxx/Mayoi-ecchi.git "$tempdir"
 echo ""
 echo "Clone done"
