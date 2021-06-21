@@ -5,7 +5,7 @@ exports.run = async (client, msg, args) => {
         msg.channel.send("Mayoi will be rebooted.");
         client.destroy();
     };
-}
+};
 
 exports.conf = {
     aliases: [],
